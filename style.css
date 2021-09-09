@@ -1,0 +1,77 @@
+/* Importera typsnitt */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+/* Nollställ marginal etc samt mjuk övergång för hela sidan */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: ease-in-out 1s;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #282828, #202020);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    transform: translate(0, -50px);
+}
+
+div {
+    margin-left: 100px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: lightgray;
+    margin-bottom: 40px;
+}
+
+a {
+    display: flex;
+    width: 325px;
+    height: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #00BFA6;
+    color: black;
+    padding: 8% 5%;
+    white-space: nowrap;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+a img {
+    width: 35px;
+}
+
+a:hover {
+    background: #5be4d1;
+    transition: 0.3s;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 0;
+    height: 35px;
+    width: 100%;
+    color: darkgray;
+    font-weight: 100;
+    font-size: 0.8rem;
+}
